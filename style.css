@@ -1,0 +1,85 @@
+body {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    position: relative;
+  }
+  
+ 
+  .title {
+    position: fixed;
+    top: 33%; /* Adjust vertical position */
+    left: 49.5%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    color: #000000;
+  }
+
+.input {
+    width: 400px;
+    height: 30px;
+    background: #E0E0E0;
+    border-radius: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.925)
+}
+.input:focus {
+    border-color: #fa353f; /* Change to your desired color */
+    outline: red; /* Remove the default focus outline if needed */
+  }
+.input::placeholder {
+    color: #7d7d7e; /* Change to your desired color */
+}
+.input-field {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    top: 350px;
+}
+
+i {
+    position: relative;
+    top: 7px;
+    left: -495px;
+    font-size: 23px;
+    color: rgb(255, 255, 255)
+}
+.submit {
+    position: absolute;
+    width: 123px;
+    height: 35px;
+
+    left: 870px;
+    top: 10px;
+    background: #E0E0E0;
+    border-radius: 15px;
+}
+.submit::placeholder {
+    color: #eeeeee; /* Change to your desired color */
+}
+.submit:hover {
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.7);
+}
+.register {
+    position: absolute;
+    width: 258px;
+    height: 18px;
+    left: 400px;
+    top: 270px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: rgba(226, 226, 226, 0.65);
+  
+}
+.register:active {
+    color:rgb(221, 205, 205);
+}
