@@ -10,13 +10,15 @@
 </head>
 <body>
     <div class="dashboard">
-        <div class="dashboard-title">Mal De Wear</div>
+        <div class="dashboard-title">
+            <a href="#">Mal De Wear</a>
+          </div>
         <nav class="nav-links">
             <a href="#"><i class="bx bx-cart"></i></a>
             <a href="#"><i class="bx bx-user-circle"></i></a>
             <a href="#"><i class="bx bx-heart"></i></a>
         </nav>
-            <a href="#" class="menu-icon"><i class="bx bx-menu-alt-left"></i></a>
+        <a href="#" class="menu-icon"><i class="bx bx-menu-alt-left"></i></a>
     </div>
     <div class="container">
         <div class="title">
@@ -43,5 +45,37 @@
             <p>Don't have an account? <a href="">Sign up!</a></p>
         </div>
     </div>
+
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <h3>Men</h3>
+            <ul>
+                <li>New Arrivals</li>
+                <li>Best Sellers</li>
+                <li>Shop by Collection</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const sidebar = document.querySelector('.sidebar');
+        const container = document.querySelector('.container');
+        const dashboard = document.querySelector('.dashboard');
+
+        menuIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-active');
+            container.classList.toggle('container-active');
+        });
+
+        container.addEventListener('click', (event) => {
+            if (event.target === container || event.target === dashboard) {
+                sidebar.classList.remove('sidebar-active');
+                container.classList.remove('container-active');
+            }
+        });
+
+
+    </script>
 </body>
 </html>
