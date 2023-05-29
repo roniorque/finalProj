@@ -6,7 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
+
 }
 
 .container {
@@ -128,7 +128,7 @@ i {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    flex-grow: 1; /* Occupy remaining space */
+    flex-grow: 0; /* Occupy remaining space */
     display: flex; /* Ensure flex behavior */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */

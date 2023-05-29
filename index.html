@@ -54,6 +54,18 @@
                 <li>Best Sellers</li>
                 <li>Shop by Collection</li>
             </ul>
+            <h3>Women</h3>
+            <ul>
+                <li>New Arrivals</li>
+                <li>Best Sellers</li>
+                <li>Shop by Collection</li>
+            </ul>
+            <h3>Kids</h3>
+            <ul>
+                <li>New Arrivals</li>
+                <li>Best Sellers</li>
+                <li>Shop by Collection</li>
+            </ul>
         </div>
     </div>
 
@@ -74,7 +86,15 @@
                 container.classList.remove('container-active');
             }
         });
+        const navLinks = document.querySelectorAll('.nav-links a');
 
+        navLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSection = document.querySelector(link.getAttribute('href'));
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+        });
 
     </script>
 </body>
