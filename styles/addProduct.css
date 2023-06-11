@@ -31,13 +31,13 @@ html{
    margin-top: 1rem;
    font-size: 1.7rem;
    padding:1rem 3rem;
-   background: var(--green);
-   color:var(--white);
    text-align: center;
+   color: black;
 }
 
 .btn:hover{
    background: var(--black);
+   
 }
 
 .message{

@@ -45,9 +45,7 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
             <a href="#" class="menu-icon"><i class="bx bx-menu-alt-left"></i></a>
         </div>
 
-        <div class="sidebar">
-            
-        </div>
+     
     </div>
 
      <div class="product-container-wrapper">
