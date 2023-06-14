@@ -5,6 +5,7 @@
       <title>Registration Mal De Wear</title>
       <link rel="stylesheet" href="../styles/register.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
       <style>
          /* Additional styles for registration form pop-up */
          .registration-form-container {
@@ -67,7 +68,7 @@
          .registration-form input[type="text"],
          .registration-form input[type="password"],
          .registration-form input[type="email"],
-         .registration-form input[type="text"][placeholder="Billing Information & Shipping Address"],
+         .registration-form input[type="text"][placeholder="Shipping Address"],
          .registration-form input[type="text"][placeholder="Username"],
          .registration-form input[type="text"][placeholder="Password"],
          .registration-form input[type="text"][placeholder="Confirm"] {
@@ -128,6 +129,10 @@
          .login {
             display: none;
          }
+         .field{
+            border-radius: 2em;
+         }
+       
       </style>
    </head>
    <body>
@@ -164,8 +169,18 @@
           </div>
           <br>
           <div class="field">
+             <span class="fa fa-user-plus"></span>
+             <input type="text" name ="username" required placeholder="Username">
+          </div>
+          <br>
+          <div class="field">
              <span class="fa fa-envelope"></span>
              <input type="email" name ="email" required placeholder="Email">
+          </div>
+          <br>
+          <div class="field">
+             <span class="fa fa-map-marker"></span>
+             <input type="text" name="shippingAddress" required placeholder="Shipping Address">
           </div>
           <br>
           <div class="field">
@@ -174,31 +189,16 @@
           </div>
           <br>
           <div class="field">
-             <span class="fa fa-map-marker"></span>
-             <input type="text" name="address" required placeholder="Address">
+             <span class="fa fa-credit-card"></span>
+             <input type="password" id="password" name="password" required placeholder="Password">
           </div>
           <br>
           <div class="field">
              <span class="fa fa-credit-card"></span>
-             <input type="text" name="billing" required placeholder="Shipping Address">
+             <input type="password" id="confirmPass" required placeholder="Confirm Password">
           </div>
           <br>
-          <div class="field">
-             <span class="fa fa-credit-card"></span>
-             <input type="text" name="username" required placeholder="Username">
-          </div>
-          <br>
-          <div class="field">
-             <span class="fa fa-credit-card"></span>
-             <input type="password" id="passwordField" name="password" required placeholder="Password">
-          </div>
-          <br>
-          <div class="field">
-             <span class="fa fa-credit-card"></span>
-             <input type="password" id="confirmField" required placeholder="Confirm">
-          </div>
-          <br>
-          <div class="field">
+          <div class="field2">
              <input type="submit" value="Register">
           </div>
           <br>
