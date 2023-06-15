@@ -45,45 +45,23 @@ $product = Product::getById($prod_id);
             opacity: 0.7;
         }
 
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-bottom: 20px;
-            left: 20px;
-            position: absolute;
-            top: 20px;
-        }
-        .image{
-            align-items: center;
-            margin-bottom: 20px;
-            margin-top: -80px;
-            min-width: 300px;
-            max-width: 300px;
-            background-image: none;
-            left: 35%;
-            top: 1px;
-            position: relative;
 
-}
+     
+
+
     </style>
 </head>
 <body>
 <div class="dashboard">
-        <button class="button" onclick="history.back()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
+        <button class="back" onclick="history.back()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
         <div class="dashboard-title">
             <a>Mal De Wear</a>
         </div>
     </div>
-    <div class="container">
-        <div>
-            <img class ="image" src="../images/<?php echo $product->getGender();?>/<?php echo $product->getImage();?>">
-        </div>
+<div class="container">    
+    <div class="imageContainer">
+        <img class ="image" src="../images/<?php echo $product->getGender();?>/<?php echo $product->getImage();?>">
+    </div>
         <form action="save_edit.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo $product->getProdID(); ?>">
             <div>
@@ -121,7 +99,7 @@ $product = Product::getById($prod_id);
                     <option value="Accesory" <?php echo ($product->getCategory() === 'Accesory') ? 'selected' : ''; ?>>Accesory</option>
                 </select>
             </div>
-            <input type="submit" value="Save" class="btn" >
+            <input type="submit" value="Save" class="btnSubmit" >
         </form>
     </div>
     <img src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt="" class="bg">

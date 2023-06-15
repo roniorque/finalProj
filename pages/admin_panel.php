@@ -51,10 +51,11 @@ $result = Product::list();
     <div class="container">
         <div class="button-container">
             <a href="add_product.php" class="button add">Add Product</a>
-        </div>
+     
         <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search products...">
         <button type="button" id="searchButton" class="button search">Search</button>
+    
     </div>
 
         <div class="product-container">
@@ -62,11 +63,11 @@ $result = Product::list();
             <div class="product-card">
 
                 <img src='../images/<?php echo $res->getGender();   ?>/<?php echo $res->getImage();?>' alt="Product 1" class="product-image">
-                <div class="product-details">
-                    <div class="product-name">
-                        <label><b>Name:</b> </label>
+                <div class="product-name">
                         <?=$res->getProdName(); ?>
                     </div>
+                <div class="product-details">
+                    
                     <div class="product-price">
                         <label><b>Price:</b> Php</label>
                         <?=$res->getPrice();?>
